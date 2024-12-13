@@ -59,28 +59,16 @@ export default {
   width: 100%;
   height: 100%;
   position: relative;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
 }
 
 .map-container {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
-  height: 100%;
-  min-height: 300px;
+  height: 600px;
 }
 
-@media (min-width: 768px) {
-  .map-wrapper {
-    padding-bottom: 75%; /* 4:3 aspect ratio for larger screens */
+@media (max-width: 768px) {
+  .map-container {
+    height: 400px;
   }
-}
-
-.map-article {
-  margin: 1rem 0;
-  padding: 1rem;
-  background: var(--background-color);
-  border-radius: var(--border-radius);
 }
 </style>

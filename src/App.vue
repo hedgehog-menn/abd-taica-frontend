@@ -25,4 +25,29 @@ body {
   margin: 0;
   padding: 0;
 }
+
+/* Leaflet specific fixes */
+.leaflet-control-zoom {
+  border: none !important;
+  background: var(--background-color) !important;
+}
+
+.leaflet-control-zoom a {
+  background: var(--background-color) !important;
+  color: var(--primary) !important;
+  border: 1px solid var(--primary) !important;
+}
+
+/* Remove pin point blue border */
+.leaflet-marker-icon {
+  background: transparent !important;
+  border: none !important;
+  filter: none !important;
+}
+
+.map-container {
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
 </style>

@@ -1,11 +1,16 @@
 <template>
-  <article class="map-wrapper">
-    <div class="map-container" ref="mapContainer"></div>
-    <div class="legend">
-      <h3>Students per Region</h3>
-      <div v-for="(item, i) in legend" :key="i" class="legend-item">
-        <span class="color-box" :style="{ backgroundColor: item.color }"></span>
-        {{ item.range }}: {{ item.count }} regions
+  <article class="map-article">
+    <div class="map-wrapper">
+      <div class="map-container" ref="mapContainer"></div>
+      <div class="legend">
+        <h3>Students per Region</h3>
+        <div v-for="(item, i) in legend" :key="i" class="legend-item">
+          <span
+            class="color-box"
+            :style="{ backgroundColor: item.color }"
+          ></span>
+          {{ item.range }}: {{ item.count }} regions
+        </div>
       </div>
     </div>
   </article>
@@ -72,7 +77,7 @@ export default {
 
         // Create legend
         const counts = Object.values(studentCounts);
-        console.log("count", counts);
+        console.log('count', counts);
         legend.value = [
           {
             range: '1-10',
@@ -115,17 +120,16 @@ export default {
 
 <style>
 .map-wrapper {
-  position: relative;
   height: 600px;
   padding: 1rem;
   background: var(--background-color);
   border-radius: var(--border-radius);
-  margin: 1rem;
 }
 
 .map-container {
   width: 100%;
   height: 100%;
+  border-radius: var(--border-radius);
 }
 
 .legend {

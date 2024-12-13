@@ -97,7 +97,7 @@ export default {
 .grid {
   display: grid;
   gap: 1rem;
-  margin: 1rem 0;
+  padding: 1rem;
 }
 
 @media (min-width: 992px) {
@@ -109,13 +109,9 @@ export default {
 .map-wrapper {
   height: 100%;
   min-height: 500px;
-  position: relative;
 }
 
 .map-container {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
 }
@@ -123,13 +119,8 @@ export default {
 .table-wrapper {
   overflow-x: auto;
   max-height: 500px;
-}
-
-/* For mobile screens */
-@media screen and (max-width: 992px) {
-  .map-wrapper {
-    height: 400px;
-    margin-bottom: 1rem;
-  }
+  padding: 1rem;
+  background: var(--background-color);
+  border-radius: var(--border-radius);
 }
 </style>
