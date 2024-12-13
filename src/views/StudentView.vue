@@ -1,14 +1,14 @@
 <template>
   <main class="container">
     <div class="grid">
-      <!-- Map Column -->
+      <!-- Map Article -->
       <article class="map-article">
         <div class="map-wrapper">
           <div class="map-container" ref="mapContainer"></div>
         </div>
       </article>
 
-      <!-- Table Column -->
+      <!-- Table Article -->
       <article class="table-article">
         <div class="table-wrapper">
           <table>
@@ -93,34 +93,30 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .grid {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 1rem;
   padding: 1rem;
 }
 
-@media (min-width: 992px) {
-  .grid {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
 .map-wrapper {
-  height: 100%;
-  min-height: 500px;
-}
-
-.map-container {
-  width: 100%;
-  height: 100%;
+  height: 600px;
 }
 
 .table-wrapper {
   overflow-x: auto;
   max-height: 500px;
-  padding: 1rem;
-  background: var(--background-color);
-  border-radius: var(--border-radius);
+}
+
+thead {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+article {
+  margin: 0;
 }
 </style>

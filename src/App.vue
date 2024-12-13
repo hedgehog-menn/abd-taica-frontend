@@ -7,27 +7,21 @@
       <!-- Navigation items can be added here -->
     </ul>
   </nav>
-  
+
   <router-view></router-view>
 </template>
 
 <script>
 export default {
-  name: 'App'
-}
+  name: 'App',
+};
 </script>
 
 <style>
 @import '@picocss/pico/css/pico.min.css';
 
-/* Global custom styles */
-body {
-  margin: 0;
-  padding: 0;
-}
-
 /* Leaflet specific fixes */
-.leaflet-control-zoom {
+/* .leaflet-control-zoom {
   border: none !important;
   background: var(--background-color) !important;
 }
@@ -36,7 +30,7 @@ body {
   background: var(--background-color) !important;
   color: var(--primary) !important;
   border: 1px solid var(--primary) !important;
-}
+} */
 
 /* Remove pin point blue border */
 .leaflet-marker-icon {
@@ -46,8 +40,8 @@ body {
 }
 
 .map-container {
-  border-radius: var(--border-radius);
+  width: 100%;
+  height: 100%;
   overflow: hidden;
 }
-
 </style>

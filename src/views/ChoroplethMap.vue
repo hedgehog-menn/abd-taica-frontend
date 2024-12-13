@@ -1,15 +1,16 @@
 <template>
   <article class="map-article">
     <div class="map-wrapper">
-      <div class="map-container" ref="mapContainer"></div>
-      <div class="legend">
-        <h3>Students per Region</h3>
-        <div v-for="(item, i) in legend" :key="i" class="legend-item">
-          <span
-            class="color-box"
-            :style="{ backgroundColor: item.color }"
-          ></span>
-          {{ item.range }}: {{ item.count }} regions
+      <div class="map-container" ref="mapContainer">
+        <div class="legend">
+          <h3>Students per Region</h3>
+          <div v-for="(item, i) in legend" :key="i" class="legend-item">
+            <span
+              class="color-box"
+              :style="{ backgroundColor: item.color }"
+            ></span>
+            {{ item.range }}: {{ item.count }} regions
+          </div>
         </div>
       </div>
     </div>
@@ -118,18 +119,10 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .map-wrapper {
   height: 600px;
-  padding: 1rem;
-  background: var(--background-color);
-  border-radius: var(--border-radius);
-}
-
-.map-container {
-  width: 100%;
-  height: 100%;
-  border-radius: var(--border-radius);
+  /* padding: 1rem; */
 }
 
 .legend {
