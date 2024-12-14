@@ -11,7 +11,9 @@
           v-model="filters.professor"
           placeholder="Professor"
         />
-        <button type="submit">Search</button>
+        <button type="submit">
+          <i class="fa-solid fa-magnifying-glass" />&nbsp;Search
+        </button>
         <button type="button" @click="resetFilters" class="secondary">
           Reset
         </button>

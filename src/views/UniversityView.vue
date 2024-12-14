@@ -6,7 +6,9 @@
       <fieldset class="grid">
         <input type="text" v-model="filters.id" placeholder="University ID" />
         <input type="text" v-model="filters.name" placeholder="Name" />
-        <button type="submit">Search</button>
+        <button type="submit">
+          <i class="fa-solid fa-magnifying-glass" />&nbsp;Search
+        </button>
         <button type="button" @click="resetFilters" class="secondary">
           Reset
         </button>

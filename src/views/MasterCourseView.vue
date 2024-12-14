@@ -16,12 +16,15 @@
           <option value="">Licensing</option>
           <option value="Normal">Normal</option>
         </select>
-        <button type="submit">Search</button>
+        <button type="submit">
+          <i class="fa-solid fa-magnifying-glass" />&nbsp;Search
+        </button>
         <button type="button" @click="resetFilters" class="secondary">
           Reset
         </button>
       </fieldset>
     </form>
+
     <!-- Table Article -->
     <article class="table-article">
       <div class="table-wrapper">

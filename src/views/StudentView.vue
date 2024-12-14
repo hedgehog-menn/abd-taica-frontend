@@ -8,7 +8,9 @@
         <input type="text" v-model="filters.name" placeholder="Name" />
         <input type="text" v-model="filters.phone" placeholder="Phone" />
         <input type="email" v-model="filters.email" placeholder="Email" />
-        <button type="submit">Search</button>
+        <button type="submit">
+          <i class="fa-solid fa-magnifying-glass" />&nbsp;Search
+        </button>
         <button type="button" @click="resetFilters" class="secondary">
           Reset
         </button>

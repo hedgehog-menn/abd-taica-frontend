@@ -1,10 +1,14 @@
 <template>
   <nav class="container-fluid">
     <ul>
-      <li><strong>Spatial Data System</strong></li>
+      <li>
+        <strong
+          ><i class="fa-solid fa-database" />&nbsp;Group 5: TAICA System</strong
+        >
+      </li>
     </ul>
     <ul>
-      <!-- Navigation items can be added here -->
+      <li><a href="#">Log in</a></li>
     </ul>
   </nav>
 
@@ -18,7 +22,7 @@ export default {
 </script>
 
 <style>
-@import '@picocss/pico/css/pico.min.css';
+@import '@picocss/pico/css/pico';
 
 /* Leaflet specific fixes */
 /* .leaflet-control-zoom {
