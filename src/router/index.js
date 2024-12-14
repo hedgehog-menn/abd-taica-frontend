@@ -10,16 +10,19 @@ const routes = [
     path: '/university',
     name: 'university',
     component: UniversityView,
+    props: (route) => ({ query: route.query }),
   },
   {
     path: '/student',
     name: 'student',
     component: StudentView,
+    props: (route) => ({ query: route.query }),
   },
   {
     path: '/master-course',
     name: 'master-course',
     component: MasterCourseView,
+    props: (route) => ({ query: route.query }),
   },
   {
     path: '/satellite-course',
@@ -30,6 +33,7 @@ const routes = [
     path: '/choropleth',
     name: 'choropleth',
     component: ChoroplethMap,
+    props: (route) => ({ query: route.query }),
   },
   {
     path: '/',
