@@ -58,7 +58,7 @@ export default {
     const executeQuery = async () => {
       try {
         const response = await axios.post(
-          'http://127.0.0.1:5000/api/custom-query',
+          `${process.env.VUE_APP_API_URL}/api/custom-query`,
           {
             query: query.value,
             params: {},

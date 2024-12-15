@@ -85,7 +85,7 @@ export default {
         });
 
         const response = await axios.get(
-          `http://127.0.0.1:5000/api/master-courses?${params}`
+          `${process.env.VUE_APP_API_URL}/api/master-courses?${params}`
         );
         courses.value = response.data;
       } catch (error) {

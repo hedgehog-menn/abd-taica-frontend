@@ -96,7 +96,7 @@ export default {
         });
 
         const response = await axios.get(
-          `http://127.0.0.1:5000/api/students?${params}`
+          `${process.env.VUE_APP_API_URL}/api/students?${params}`
         );
         students.value = response.data;
         updateMap();

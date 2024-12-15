@@ -59,8 +59,8 @@ export default {
 
       try {
         const [geoResponse, studentsResponse] = await Promise.all([
-          axios.get('http://127.0.0.1:5000/api/taiwan-regions'),
-          axios.get('http://127.0.0.1:5000/api/students-by-region'),
+          axios.get(`${process.env.VUE_APP_API_URL}/api/taiwan-regions`),
+          axios.get(`${process.env.VUE_APP_API_URL}/api/students-by-region`),
         ]);
 
         const studentCounts = studentsResponse.data;
