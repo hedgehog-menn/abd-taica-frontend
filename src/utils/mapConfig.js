@@ -4,7 +4,7 @@ import 'leaflet/dist/leaflet.css';
 export const mapSettings = {
   center: [23.97, 120.97],
   zoom: 7,
-  minZoom: 7,
+  minZoom: 6,
   bounds: {
     southWest: [21.8, 119.3],
     northEast: [25.4, 122.0],

@@ -8,7 +8,7 @@
       </li>
     </ul>
     <ul>
-      <li><a href="#">Log in</a></li>
+      <li><a href="/">Home</a></li>
     </ul>
   </nav>
 
@@ -22,7 +22,7 @@ export default {
 </script>
 
 <style>
-@import '@picocss/pico/css/pico';
+@import '@picocss/pico/css/pico.orange';
 
 /* Leaflet specific fixes */
 /* .leaflet-control-zoom {
