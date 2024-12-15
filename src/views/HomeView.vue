@@ -28,6 +28,11 @@ const items = ref([
     link: '/university',
   },
   {
+    title: 'Department',
+    icon: 'fa-school',
+    link: '/department',
+  },
+  {
     title: 'Student',
     icon: 'fa-user',
     link: '/student',
@@ -65,8 +70,16 @@ const navigateTo = (link) => {
 </script>
 
 <style scoped>
-.grid {
-  grid-template-columns: 1fr;
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .cursor-pointer {
