@@ -1,20 +1,18 @@
 <template>
-  <article class="map-article">
-    <div class="map-wrapper">
-      <div class="map-container" ref="mapContainer">
-        <div class="legend">
-          <h3>Students per Region</h3>
-          <div v-for="(item, i) in legend" :key="i" class="legend-item">
-            <span
-              class="color-box"
-              :style="{ backgroundColor: item.color }"
-            ></span>
-            {{ item.range }}: {{ item.count }} regions
-          </div>
+  <div class="map-wrapper">
+    <div class="map-container" ref="mapContainer">
+      <div class="legend">
+        <h3>Students per Region</h3>
+        <div v-for="(item, i) in legend" :key="i" class="legend-item">
+          <span
+            class="color-box"
+            :style="{ backgroundColor: item.color }"
+          ></span>
+          {{ item.range }}: {{ item.count }} regions
         </div>
       </div>
     </div>
-  </article>
+  </div>
 </template>
 
 <script>
@@ -121,8 +119,10 @@ export default {
 
 <style scoped>
 .map-wrapper {
-  height: 600px;
-  /* padding: 1rem; */
+  height: calc(100vh - 5rem);
+  width: calc(100% - 2rem);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .legend {
@@ -130,10 +130,10 @@ export default {
   bottom: 20px;
   right: 20px;
   z-index: 1000;
-  background: var(--background-color);
+  background: var(--pico-background-color);
   padding: 1rem;
-  border-radius: var(--border-radius);
-  box-shadow: var(--card-box-shadow);
+  border-radius: var(--pico-border-radius);
+  box-shadow: var(--pico-card-box-shadow);
 }
 
 .legend-item {
