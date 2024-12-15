@@ -4,6 +4,7 @@ import StudentView from '../views/StudentView.vue';
 import MasterCourseView from '@/views/MasterCourseView.vue';
 import SatelliteCourseView from '@/views/SatelliteCourseView.vue';
 import ChoroplethMap from '@/views/ChoroplethMap.vue';
+import CustomQueryView from '@/views/CustomQueryView.vue';
 
 const routes = [
   {
@@ -38,6 +39,13 @@ const routes = [
     name: 'choropleth',
     component: ChoroplethMap,
     meta: { title: 'Student Map' },
+    props: (route) => ({ query: route.query }),
+  },
+  {
+    path: '/custom-query',
+    name: 'custom-query',
+    component: CustomQueryView,
+    meta: { title: 'Custom Query' },
     props: (route) => ({ query: route.query }),
   },
   {
