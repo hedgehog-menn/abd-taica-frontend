@@ -33,6 +33,21 @@ const items = ref([
     link: '/student',
   },
   {
+    title: 'Master Cousre',
+    icon: 'fa-book-open',
+    link: '/master-course',
+  },
+  {
+    title: 'Satellite Cousre',
+    icon: 'fa-book-open',
+    link: '/satellite-course',
+  },
+  {
+    title: 'Semester Enrollment',
+    icon: 'fa-book-open',
+    link: '/semester-enrollment',
+  },
+  {
     title: 'Student Map by region',
     icon: 'fa-earth-asia',
     link: '/choropleth',
@@ -50,6 +65,10 @@ const navigateTo = (link) => {
 </script>
 
 <style scoped>
+.grid {
+  grid-template-columns: 1fr;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
