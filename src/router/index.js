@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router';
+import HomeView from '@/views/HomeView.vue';
 import UniversityView from '../views/UniversityView.vue';
 import StudentView from '../views/StudentView.vue';
 import MasterCourseView from '@/views/MasterCourseView.vue';
@@ -7,6 +8,11 @@ import ChoroplethMap from '@/views/ChoroplethMap.vue';
 import CustomQueryView from '@/views/CustomQueryView.vue';
 
 const routes = [
+  {
+    path: '/home',
+    name: 'home',
+    component: HomeView,
+  },
   {
     path: '/university',
     name: 'university',
@@ -50,7 +56,7 @@ const routes = [
   },
   {
     path: '/',
-    redirect: '/university',
+    redirect: '/home',
   },
 ];
 
