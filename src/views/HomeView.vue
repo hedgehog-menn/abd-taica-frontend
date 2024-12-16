@@ -58,6 +58,11 @@ const items = ref([
     link: '/choropleth',
   },
   {
+    title: "Student's Average GPA Map",
+    icon: 'fa-earth-asia',
+    link: '/average-gpa-map',
+  },
+  {
     title: 'Exam Schedule',
     icon: 'fa-route',
     link: '/exam-schedule',

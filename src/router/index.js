@@ -14,6 +14,7 @@ import UniversityStudentStatusView from '@/views/UniversityStudentStatusView.vue
 import StudentTotalCreditView from '@/views/StudentTotalCreditView.vue';
 import CourseAnnouncementView from '@/views/CourseAnnouncementView.vue';
 import ExamScheduleView from '@/views/ExamScheduleView.vue';
+import AverageGPAMapView from '@/views/AverageGPAMapView.vue';
 
 const routes = [
   {
@@ -112,6 +113,13 @@ const routes = [
     name: 'exam-schedule',
     component: ExamScheduleView,
     meta: { title: 'Exam Schedule' },
+    props: (route) => ({ query: route.query }),
+  },
+  {
+    path: '/average-gpa-map',
+    name: 'average-gpa-map',
+    component: AverageGPAMapView,
+    meta: { title: "Student's Average GPA Map" },
     props: (route) => ({ query: route.query }),
   },
   {

@@ -1,6 +1,6 @@
 <template>
   <main class="container">
-    <h1>Department</h1>
+    <h1>Course Approvement</h1>
     <!-- Table Article -->
     <article class="table-article">
       <div class="table-wrapper">
