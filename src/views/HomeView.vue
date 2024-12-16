@@ -38,12 +38,12 @@ const items = ref([
     link: '/student',
   },
   {
-    title: 'Master Cousre',
+    title: 'Master Course',
     icon: 'fa-book-open',
     link: '/master-course',
   },
   {
-    title: 'Satellite Cousre',
+    title: 'Satellite Course',
     icon: 'fa-book-open',
     link: '/satellite-course',
   },
@@ -53,9 +53,29 @@ const items = ref([
     link: '/semester-enrollment',
   },
   {
-    title: 'Student Map by region',
+    title: 'Student Map by Region',
     icon: 'fa-earth-asia',
     link: '/choropleth',
+  },
+  {
+    title: 'Course Approvement',
+    icon: 'fa-check',
+    link: 'course-approvement',
+  },
+  {
+    title: "University's Total Students",
+    icon: 'fa-user',
+    link: '/university-total-student',
+  },
+  {
+    title: "University's Student Status",
+    icon: 'fa-user',
+    link: '/university-student-status',
+  },
+  {
+    title: "Student's Total Credits",
+    icon: 'fa-user',
+    link: '/student-total-credit',
   },
   {
     title: 'Custom Query',

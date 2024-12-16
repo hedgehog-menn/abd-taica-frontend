@@ -67,9 +67,7 @@ export default {
   overflow: hidden;
 }
 
-/* Theme selector styling */
-select {
-  margin-bottom: 0;
-  width: auto;
+.text-center {
+  text-align: center;
 }
 </style>
