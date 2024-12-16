@@ -92,7 +92,7 @@ export default {
 
     const searchAnnouncements = () => {
       const cleanedFilters = Object.fromEntries(
-        Object.entries(filters.value).filter(([_, value]) => value.trim())
+        Object.entries(filters.value).filter(([, value]) => value.trim())
       );
 
       router.push({ query: cleanedFilters });

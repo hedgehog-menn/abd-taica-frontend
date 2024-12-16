@@ -7,14 +7,17 @@
         <input type="text" v-model="filters.id" placeholder="Course ID" />
         <input type="text" v-model="filters.name" placeholder="Name" />
         <input type="number" v-model="filters.credit" placeholder="Credit" />
-        <input
+        <!-- <input
           type="text"
           v-model="filters.professor"
           placeholder="Professor"
-        />
+        /> -->
         <select name="licensing" v-model="filters.licensing">
           <option value="">Licensing</option>
-          <option value="Normal">Normal</option>
+          <option value="normal">Normal</option>
+          <option value="conditional licensing">Conditional</option>
+          <option value="customized licensing">Customized</option>
+          <option value="closed licensing">Closed</option>
         </select>
         <button type="submit">
           <i class="fa-solid fa-magnifying-glass" />&nbsp;Search
@@ -34,7 +37,7 @@
               <th scope="col">ID</th>
               <th scope="col">Name</th>
               <th scope="col">Credit</th>
-              <th scope="col">Professor</th>
+              <!-- <th scope="col">Professor</th> -->
               <th scope="col">Licensing Type</th>
             </tr>
           </thead>
@@ -43,7 +46,7 @@
               <td>{{ course.CourseID }}</td>
               <td>{{ course.CourseName }}</td>
               <td>{{ course.Credit }}</td>
-              <td>{{ course.ProfessorName }}</td>
+              <!-- <td>{{ course.ProfessorName }}</td> -->
               <td>{{ course.LicensingType }}</td>
             </tr>
           </tbody>
