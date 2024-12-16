@@ -63,6 +63,11 @@ const items = ref([
     link: 'course-approvement',
   },
   {
+    title: 'Course Announcement',
+    icon: 'fa-bullhorn',
+    link: 'course-announcement',
+  },
+  {
     title: "University's Total Students",
     icon: 'fa-user',
     link: '/university-total-student',
