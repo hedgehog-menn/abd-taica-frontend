@@ -12,6 +12,8 @@ import UniversityTotalStudentView from '@/views/UniversityTotalStudentView.vue';
 import CourseApprovementView from '@/views/CourseApprovementView.vue';
 import UniversityStudentStatusView from '@/views/UniversityStudentStatusView.vue';
 import StudentTotalCreditView from '@/views/StudentTotalCreditView.vue';
+import CourseAnnouncementView from '@/views/CourseAnnouncementView.vue';
+import ExamScheduleView from '@/views/ExamScheduleView.vue';
 
 const routes = [
   {
@@ -96,6 +98,20 @@ const routes = [
     name: 'student-total-credit',
     component: StudentTotalCreditView,
     meta: { title: "Student's Total Credits" },
+    props: (route) => ({ query: route.query }),
+  },
+  {
+    path: '/course-announcement',
+    name: 'course-announcement',
+    component: CourseAnnouncementView,
+    meta: { title: 'Course Announcement' },
+    props: (route) => ({ query: route.query }),
+  },
+  {
+    path: '/exam-schedule',
+    name: 'exam-schedule',
+    component: ExamScheduleView,
+    meta: { title: 'Exam Schedule' },
     props: (route) => ({ query: route.query }),
   },
   {

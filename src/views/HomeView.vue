@@ -58,6 +58,11 @@ const items = ref([
     link: '/choropleth',
   },
   {
+    title: 'Exam Schedule',
+    icon: 'fa-route',
+    link: '/exam-schedule',
+  },
+  {
     title: 'Course Approvement',
     icon: 'fa-check',
     link: 'course-approvement',
