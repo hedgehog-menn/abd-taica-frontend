@@ -33,6 +33,11 @@ const items = ref([
     link: '/department',
   },
   {
+    title: 'Program',
+    icon: 'fa-book-open',
+    link: '/program',
+  },
+  {
     title: 'Student',
     icon: 'fa-user',
     link: '/student',
@@ -91,6 +96,11 @@ const items = ref([
     title: "Student's Total Credits",
     icon: 'fa-user',
     link: '/student-total-credit',
+  },
+  {
+    title: 'Certification Check',
+    icon: 'fa-certificate',
+    link: '/certification-check',
   },
   {
     title: 'Custom Query',

@@ -15,6 +15,8 @@ import StudentTotalCreditView from '@/views/StudentTotalCreditView.vue';
 import CourseAnnouncementView from '@/views/CourseAnnouncementView.vue';
 import ExamScheduleView from '@/views/ExamScheduleView.vue';
 import AverageGPAMapView from '@/views/AverageGPAMapView.vue';
+import CertificationCheck from '@/views/CertificationCheck.vue';
+import ProgramView from '@/views/ProgramView.vue';
 
 const routes = [
   {
@@ -41,6 +43,13 @@ const routes = [
     name: 'department',
     component: DepartmentView,
     meta: { title: 'Department' },
+  },
+  {
+    path: '/program',
+    name: 'program',
+    component: ProgramView,
+    meta: { title: 'Program' },
+    props: (route) => ({ query: route.query }),
   },
   {
     path: '/master-course',
@@ -120,6 +129,13 @@ const routes = [
     name: 'average-gpa-map',
     component: AverageGPAMapView,
     meta: { title: "Student's Average GPA Map" },
+    props: (route) => ({ query: route.query }),
+  },
+  {
+    path: '/certification-check',
+    name: 'certification-check',
+    component: CertificationCheck,
+    meta: { title: 'Certification Check' },
     props: (route) => ({ query: route.query }),
   },
   {
